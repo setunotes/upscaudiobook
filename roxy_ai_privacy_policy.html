@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Roxy AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0A0E27 0%, #1E2139 100%);
+            color: #ffffff;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(108, 92, 231, 0.2);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #6C5CE7, #74B9FF);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 20px;
+        }
+
+        .logo-text {
+            font-size: 22px;
+            font-weight: 700;
+            color: white;
+        }
+
+        .back-button {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #6C5CE7;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            padding: 10px 16px;
+            border-radius: 8px;
+            border: 1px solid rgba(108, 92, 231, 0.3);
+        }
+
+        .back-button:hover {
+            background: rgba(108, 92, 231, 0.1);
+            transform: translateX(-2px);
+        }
+
+        /* Main Content */
+        .main-content {
+            padding: 40px 0 60px;
+        }
+
+        .page-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .page-title {
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #6C5CE7, #74B9FF, #00B894);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .page-subtitle {
+            font-size: 18px;
+            color: rgba(255, 255, 255, 0.7);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .last-updated {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(108, 92, 231, 0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 20px;
+            color: #6C5CE7;
+            border: 1px solid rgba(108, 92, 231, 0.3);
+        }
+
+        /* Content Sections */
+        .content-section {
+            background: rgba(30, 33, 57, 0.6);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .content-section:hover {
+            border-color: rgba(108, 92, 231, 0.3);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px rgba(108, 92, 231, 0.1);
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+
+        .section-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #6C5CE7, #74B9FF);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 18px;
+        }
+
+        .section-title {
+            font-size: 24px;
+            font-weight: 600;
+            color: white;
+        }
+
+        .section-content {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .section-content p {
+            margin-bottom: 16px;
+        }
+
+        .section-content ul {
+            margin: 16px 0;
+            padding-left: 24px;
+        }
+
+        .section-content li {
+            margin-bottom: 8px;
+            position: relative;
+        }
+
+        .section-content li::marker {
+            color: #6C5CE7;
+        }
+
+        .section-content h3 {
+            color: #74B9FF;
+            margin: 24px 0 16px;
+        }
+
+        /* Highlight boxes */
+        .highlight-box {
+            background: rgba(0, 184, 148, 0.1);
+            border: 1px solid rgba(0, 184, 148, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .highlight-box::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(135deg, #00B894, #00CEC9);
+            border-radius: 2px;
+        }
+
+        .warning-box {
+            background: rgba(255, 107, 107, 0.1);
+            border: 1px solid rgba(255, 107, 107, 0.3);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .warning-box::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(135deg, #FF6B6B, #FF8E8E);
+            border-radius: 2px;
+        }
+
+        /* Contact section */
+        .contact-info {
+            background: linear-gradient(135deg, rgba(108, 92, 231, 0.1), rgba(116, 185, 255, 0.1));
+            border: 1px solid rgba(108, 92, 231, 0.3);
+            border-radius: 16px;
+            padding: 24px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info h3 {
+            color: #6C5CE7;
+            margin-bottom: 12px;
+            font-size: 20px;
+        }
+
+        .contact-info a {
+            color: #74B9FF;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #6C5CE7;
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(10, 14, 39, 0.8);
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .page-title {
+                font-size: 28px;
+            }
+
+            .page-subtitle {
+                font-size: 16px;
+            }
+
+            .content-section {
+                padding: 20px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .section-content {
+                font-size: 15px;
+            }
+
+            .header-content {
+                flex-direction: column;
+                gap: 16px;
+            }
+
+            .logo-text {
+                font-size: 18px;
+            }
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection styling */
+        ::selection {
+            background: rgba(108, 92, 231, 0.3);
+            color: white;
+        }
+
+        /* Link styling */
+        a {
+            color: #74B9FF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #6C5CE7;
+            text-decoration: underline;
+        }
+
+        .section-content strong {
+            color: #6C5CE7;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <div class="logo-text">Roxy AI</div>
+                </div>
+                <a href="/" class="back-button">
+                    <i class="fas fa-arrow-left"></i>
+                    Back to App
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <h1 class="page-title">Privacy Policy</h1>
+                <p class="page-subtitle">
+                    We are committed to protecting your privacy and ensuring transparency about how our app works
+                </p>
+                <div class="last-updated">
+                    <i class="fas fa-calendar-alt"></i>
+                    Last Updated: August 29, 2025
+                </div>
+            </div>
+
+            <!-- Introduction -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h2 class="section-title">Introduction</h2>
+                </div>
+                <div class="section-content">
+                    <p>Welcome to <strong>Roxy AI</strong>, your comprehensive AI-powered toolkit. This Privacy Policy explains how we handle information when you use our mobile application available on Google Play Store, including our text-to-speech, PDF processing, and other AI-powered features.</p>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Key Point:</strong> Our app is designed with privacy in mind. We do not require user registration, do not collect personal data, and do not store your information permanently. All processing happens either on your device or with immediate deletion after cloud processing.</p>
+                    </div>
+                    
+                    <p>By using our app, you agree to the terms outlined in this Privacy Policy. If you do not agree with these terms, please do not use our application.</p>
+                </div>
+            </section>
+
+            <!-- App Features and Data Handling -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h2 class="section-title">App Features and Data Handling</h2>
+                </div>
+                <div class="section-content">
+                    <h3>Audio Tools</h3>
+                    <ul>
+                        <li><strong>Cloud Text-to-Speech:</strong> Converts text to speech using cloud-based AI voices. Text input is sent securely to cloud services, processed immediately, and deleted after audio generation. Offers 300+ voices in multiple languages with premium quality output.</li>
+                        <li><strong>On-Device Text-to-Speech:</strong> Converts text to speech entirely on your device using built-in system voices. No data transmission occurs - complete offline processing with instant results and full privacy protection.</li>
+                        <li><strong>PDF to Voice:</strong> Reads PDF documents aloud using natural male and female voices. PDF content is processed locally on your device, with voice generation handled through secure on-device or cloud services depending on selected voice option.</li>
+                    </ul>
+
+                    <h3>PDF Processing Tools</h3>
+                    <ul>
+                        <li><strong>PDF Merger:</strong> Combines multiple PDF files into a single document. All processing happens locally on your device with batch merge capabilities and page reordering options. No files are transmitted externally.</li>
+                        <li><strong>PDF OCR (Text Extraction):</strong> Extracts text from scanned PDFs and images using on-device Optical Character Recognition technology. Supports multiple languages with high accuracy processing. All text extraction happens locally without any data transmission.</li>
+                        <li><strong>PDF Password Remover:</strong> Removes passwords from encrypted PDF files for personal use and future easy accessibility. You must provide the original password to decrypt the file. All processing occurs locally on your device for maximum security and privacy.</li>
+                    </ul>
+
+                    <div class="warning-box">
+                        <p><strong>Important:</strong> PDF Password Remover is intended solely for personal use on PDFs you own or have authorized access to. You must know the original password to use this feature. This tool is designed to improve accessibility of your own documents.</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>Privacy Focus:</strong> Most PDF processing tools work entirely offline on your device. When cloud processing is optionally used for enhanced features, data is transmitted securely and immediately deleted after processing.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Information We Don't Collect -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-slash"></i>
+                    </div>
+                    <h2 class="section-title">Information We Don't Collect</h2>
+                </div>
+                <div class="section-content">
+                    <p>We are committed to your privacy. Our app <strong>does not collect</strong> the following types of information:</p>
+                    <ul>
+                        <li><strong>Personal Information:</strong> No names, email addresses, phone numbers, or contact details</li>
+                        <li><strong>Account Information:</strong> No user accounts, login credentials, or profiles</li>
+                        <li><strong>Location Data:</strong> No GPS coordinates or location tracking</li>
+                        <li><strong>Device Information:</strong> No device IDs, hardware specifications, or system details</li>
+                        <li><strong>Usage Analytics:</strong> No tracking of app usage patterns or user behavior</li>
+                        <li><strong>Document Content:</strong> No permanent storage of your PDF files, text inputs, or generated audio</li>
+                        <li><strong>File Metadata:</strong> No storage of file names, creation dates, or document properties</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p><strong>No Registration Required:</strong> Our app works without requiring any form of user registration, sign-up, or account creation. All tools are immediately accessible.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- File Processing and Storage -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h2 class="section-title">File Processing and Storage</h2>
+                </div>
+                <div class="section-content">
+                    <h3>On-Device Processing</h3>
+                    <ul>
+                        <li><strong>PDF Operations:</strong> PDF merging, password removal, and OCR text extraction happen entirely on your device</li>
+                        <li><strong>Local TTS:</strong> On-device text-to-speech processing using system voices</li>
+                        <li><strong>File Security:</strong> All processed files remain under your complete control</li>
+                        <li><strong>No Data Transmission:</strong> These features work completely offline</li>
+                    </ul>
+
+                    <h3>Optional Cloud Processing</h3>
+                    <ul>
+                        <li><strong>Cloud TTS Only:</strong> Only the Cloud Text-to-Speech feature uses external services for premium voice quality</li>
+                        <li><strong>Secure Transmission:</strong> Text is encrypted during transmission using HTTPS/TLS</li>
+                        <li><strong>Immediate Deletion:</strong> Cloud-processed text is automatically deleted after audio generation</li>
+                        <li><strong>User Choice:</strong> You can always choose on-device alternatives for complete privacy</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p><strong>Local-First Design:</strong> Our app prioritizes on-device processing to ensure your documents and data never leave your device unless you specifically choose cloud-enhanced features.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Third-Party Services -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-external-link-alt"></i>
+                    </div>
+                    <h2 class="section-title">Third-Party Services</h2>
+                </div>
+                <div class="section-content">
+                    <h3>Google AdMob</h3>
+                    <p>Our app displays advertisements through Google AdMob to support development and keep the app free. AdMob may collect certain information including:</p>
+                    <ul>
+                        <li>Device advertising ID</li>
+                        <li>IP address</li>
+                        <li>Device information for ad targeting</li>
+                        <li>App usage data related to ad interaction</li>
+                    </ul>
+                    
+                    <p>This data collection is governed by Google's Privacy Policy: <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+                    
+                    <h3>Cloud AI Services</h3>
+                    <p>When using cloud-powered features (Cloud TTS only), your content may be processed by:</p>
+                    <ul>
+                        <li>Cloud text-to-speech providers for voice generation</li>
+                        <li>AI processing services for natural voice synthesis</li>
+                    </ul>
+                    <p>These services operate under strict data processing agreements and delete all content immediately after processing.</p>
+
+                    <div class="highlight-box">
+                        <p><strong>Service Selection:</strong> You can choose between on-device and cloud processing for text-to-speech. On-device processing ensures complete privacy, while cloud processing offers enhanced quality and voice variety.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- App Permissions -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h2 class="section-title">App Permissions</h2>
+                </div>
+                <div class="section-content">
+                    <p>Our app requests minimal permissions necessary for functionality:</p>
+                    <ul>
+                        <li><strong>Storage Access:</strong> To read PDF files you select for processing and save merged/processed outputs to your chosen location</li>
+                        <li><strong>Internet Access:</strong> Only required for Cloud Text-to-Speech feature and advertisement display</li>
+                        <li><strong>Network State:</strong> To determine connectivity availability for optional cloud features</li>
+                        <li><strong>Audio Playback:</strong> To play generated text-to-speech audio files through your device speakers</li>
+                    </ul>
+                    
+                    <div class="warning-box">
+                        <p><strong>Permission Usage:</strong> We only access files you explicitly select through the system file picker. Storage permission is used solely for reading your selected PDFs and saving processed outputs. We never scan or access other files on your device.</p>
+                    </div>
+
+                    <div class="highlight-box">
+                        <p><strong>Offline Capability:</strong> Most features (PDF processing, on-device TTS) work without internet connection. Internet access is only used for Cloud TTS and ads.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Data Security -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h2 class="section-title">Data Security</h2>
+                </div>
+                <div class="section-content">
+                    <p>We implement comprehensive security measures to protect your privacy:</p>
+                    <ul>
+                        <li><strong>Encrypted Transmission:</strong> All cloud communications use HTTPS/TLS encryption</li>
+                        <li><strong>No Data Storage:</strong> We do not store any user data, files, or content on our servers</li>
+                        <li><strong>Immediate Deletion:</strong> Cloud-processed data is deleted within seconds of completion</li>
+                        <li><strong>Isolated Processing:</strong> Each processing request is handled in isolation</li>
+                        <li><strong>Secure APIs:</strong> All third-party services use industry-standard security protocols</li>
+                        <li><strong>Local-First Design:</strong> Most features work offline without any data transmission</li>
+                    </ul>
+                    
+                    <div class="highlight-box">
+                        <p><strong>Privacy by Design:</strong> Our app architecture prioritizes privacy at every level, from local processing capabilities to secure cloud interactions with immediate cleanup.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Your Rights and Control -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-check"></i>
+                    </div>
+                    <h2 class="section-title">Your Rights and Control</h2>
+                </div>
+                <div class="section-content">
+                    <p>You maintain complete control over your data and app usage:</p>
+                    <ul>
+                        <li><strong>Feature Selection:</strong> Choose between on-device and cloud processing for text-to-speech tools</li>
+                        <li><strong>File Control:</strong> All processed files remain on your device under your control</li>
+                        <li><strong>Ad Management:</strong> Disable personalized ads through device settings (Android: Settings > Google > Ads)</li>
+                        <li><strong>App Removal:</strong> Uninstall the app at any time to remove all local data</li>
+                        <li><strong>Network Control:</strong> Use airplane mode to ensure completely offline operation</li>
+                    </ul>
+
+                    <div class="highlight-box">
+                        <p><strong>Data Portability:</strong> Since all files are processed and stored locally, you have complete portability and ownership of your data.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Children's Privacy -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-child"></i>
+                    </div>
+                    <h2 class="section-title">Children's Privacy</h2>
+                </div>
+                <div class="section-content">
+                    <p>Our app is suitable for all ages and designed with strong privacy protections:</p>
+                    <ul>
+                        <li>No personal information collection from users of any age</li>
+                        <li>No account creation or registration required</li>
+                        <li>Family-friendly advertisements only</li>
+                        <li>No social features or communication capabilities</li>
+                        <li>Complete offline functionality available</li>
+                    </ul>
+                </div>
+            </section>
+
+            <!-- Changes to Privacy Policy -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-edit"></i>
+                    </div>
+                    <h2 class="section-title">Changes to This Privacy Policy</h2>
+                </div>
+                <div class="section-content">
+                    <p>We may update this Privacy Policy to reflect new features or improvements. Changes will be:</p>
+                    <ul>
+                        <li>Posted on this page with an updated "Last Modified" date</li>
+                        <li>Announced through app update notes for significant changes</li>
+                        <li>Effective immediately upon posting</li>
+                        <li>Highlighted if they affect data handling practices</li>
+                    </ul>
+                    
+                    <p>We encourage you to review this Privacy Policy periodically to stay informed about how we protect your privacy.</p>
+                </div>
+            </section>
+
+            <!-- Contact Information -->
+            <section class="content-section">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h2 class="section-title">Contact Us</h2>
+                </div>
+                <div class="section-content">
+                    <p>If you have any questions, concerns, or suggestions about this Privacy Policy or our privacy practices, please contact us:</p>
+                    
+                    <div class="contact-info">
+                        <h3>Get in Touch</h3>
+                        <p>Email: <a href="mailto:contact@sutunotes.com">contact@sutunotes.com</a></p>
+                        <p>We typically respond within 48 hours</p>
+                    </div>
+                    
+                    <p>We value your feedback and are committed to addressing any privacy concerns promptly and transparently.</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Roxy AI. All rights reserved.</p>
+                <p>Committed to privacy, transparency, and user trust.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add subtle animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all content sections
+        document.querySelectorAll('.content-section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
