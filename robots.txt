@@ -1,5 +1,5 @@
 # Robots.txt for UPSC Audiobook
-# https://upscaudiobook.in
+# https://upscaudiobook.com
 
 User-agent: *
 Allow: /
@@ -13,4 +13,4 @@ User-agent: Bingbot
 Allow: /
 
 # Sitemap location
-Sitemap: https://upscaudiobook.in/sitemap.xml
+Sitemap: https://upscaudiobook.com/sitemap.xml

@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://upscaudiobook.in/</loc>
+        <loc>https://upscaudiobook.com/</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="en-IN" href="https://upscaudiobook.in/" />
-        <xhtml:link rel="alternate" hreflang="hi-IN" href="https://upscaudiobook.in/" />
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://upscaudiobook.in/" />
+        <xhtml:link rel="alternate" hreflang="en-IN" href="https://upscaudiobook.com/" />
+        <xhtml:link rel="alternate" hreflang="hi-IN" href="https://upscaudiobook.com/" />
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://upscaudiobook.com/" />
     </url>
     <url>
-        <loc>https://upscaudiobook.in/#features</loc>
+        <loc>https://upscaudiobook.com/#features</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://upscaudiobook.in/#how-it-works</loc>
+        <loc>https://upscaudiobook.com/#how-it-works</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://upscaudiobook.in/#subjects</loc>
+        <loc>https://upscaudiobook.com/#subjects</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
     </url>
     <url>
-        <loc>https://upscaudiobook.in/#testimonials</loc>
+        <loc>https://upscaudiobook.com/#testimonials</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
     </url>
     <url>
-        <loc>https://upscaudiobook.in/#faq</loc>
+        <loc>https://upscaudiobook.com/#faq</loc>
         <lastmod>2026-08-19</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
