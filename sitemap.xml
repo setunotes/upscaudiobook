@@ -10,34 +10,4 @@
         <xhtml:link rel="alternate" hreflang="hi-IN" href="https://upscaudiobook.com/" />
         <xhtml:link rel="alternate" hreflang="x-default" href="https://upscaudiobook.com/" />
     </url>
-    <url>
-        <loc>https://upscaudiobook.com/#features</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://upscaudiobook.com/#how-it-works</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://upscaudiobook.com/#subjects</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://upscaudiobook.com/#testimonials</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://upscaudiobook.com/#faq</loc>
-        <lastmod>2026-08-19</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.6</priority>
-    </url>
 </urlset>
